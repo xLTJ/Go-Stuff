@@ -6,7 +6,7 @@ import (
 	"unicode/utf8"
 )
 
-// Hey determines bobs response to a remark (2783 ns/op)
+// Hey determines bobs response to a remark (442.9 ns/op)
 func Hey(remark string) string {
 	remark = strings.TrimSpace(remark)
 	lastRune, _ := utf8.DecodeLastRuneInString(remark)
