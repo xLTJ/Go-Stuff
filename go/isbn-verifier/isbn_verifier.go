@@ -1,6 +1,6 @@
 package isbn
 
-// IsValidISBN checks if a string is a valid ISBN (178 ns/op)
+// IsValidISBN checks if a string is a valid ISBN
 func IsValidISBN(isbn string) bool {
 	comparisonNumber := 0
 	digit := 0
