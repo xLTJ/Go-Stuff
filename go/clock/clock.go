@@ -29,9 +29,6 @@ func (c Clock) Add(m int) Clock {
 }
 
 // Subtract subtracts a number of minutes from a Clock
-//
-// Within the if-statements, first modulo is used to first get the remainder, then make it positive by adding the base.
-// Second modulo is used to account for cases with 24 hours or 60 minutes
 func (c Clock) Subtract(m int) Clock {
 	return New(c.hours, c.minutes-m)
 }
